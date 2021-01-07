@@ -12,8 +12,8 @@ public class UserServiceTest {
     UserService userService = new UserServiceImpl();
     @Test
     public void registUser() {
-        userService.registUser(new User(null,"zhangsan","666666","zhangsan@qq.com"));
-        userService.registUser(new User(null,"abcsan","666666","abcsan@qq.com"));
+        userService.registUser(new User(null,"zhang123","666666","zhang123@qq.com"));
+
     }
 
     @Test

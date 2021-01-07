@@ -18,7 +18,13 @@ public class JdbcUtils {
             Properties properties = new Properties();
             //读取配置文件
             InputStream is = JdbcUtils.class.getClassLoader().getResourceAsStream("jdbc.properties");//方法一
-            FileInputStream fis = new FileInputStream(new File("src/jdbc.properties"));//方法而
+            /*File file = new File("src/jdbc.properties");
+            String absolutePath = file.getAbsolutePath();
+            System.out.println(absolutePath);
+            FileInputStream fis = new FileInputStream(new File("src/jdbc.properties"));
+            Web下路径容易出问题，还是类加载器比较好用
+            */
+
             //从流中加载数据
             properties.load(is);
             //创建数据库连接池
