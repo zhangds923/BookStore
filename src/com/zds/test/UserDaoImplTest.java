@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class UserDaoImplTest {
-    UserDao userDao = new UserDaoImpl();
+    private UserDao userDao = new UserDaoImpl();
     @Test
     public void queryUserByUsername() {
 
