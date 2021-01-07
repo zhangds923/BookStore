@@ -20,6 +20,9 @@ public class RegistServlet extends HttpServlet {
         String password = req.getParameter("password");
         String code = req.getParameter("code");
         String email = req.getParameter("email");
+
+        int sum = Integer.sum(100, 200);
+
         //2 检查验证码是否正确，暂时写死，要求验证码是abcde
         if ("abcde".equalsIgnoreCase(code)){
             //3 检查用户名是否可用
